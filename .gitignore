@@ -1,3 +1,6 @@
+# custom folders
+comparemonty2future/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
