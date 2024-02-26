@@ -45,13 +45,17 @@ Same goes for CALIBRATE.PY or COMPARESTEADYSTATES.PY
 
 ## Contributors
 
-Developed and written by Timothy Kam.
+* Model conceptualization, theoretical proofs, and solution methods developed and written by T. Kam
 
-Initial trial runs implemented by J. Lee.
+* Model conceptualization and calibration tasks by J. Lee
+
+* Manuscript re-write, proof checks, and results re-write by T. Kao and T. Kam
 
 ## License
 
 The GNU GPL v.3.0 terms apply everywhere to these codes and subsequent uses and modifications of them (see LICENCE). Please cite this original source in all your work (i.e., your own paper and source codes) as:
-      * Paper: T. Kam, T. Kao and J. Lee (2024): **Inflation, Inequality and Welfare in a Competitive Search Model**
-      * Source: https://github.com/phantomachine/csm/
+
+* Paper: T. Kam, T. Kao and J. Lee (2024): *Inflation, Inequality and Welfare in a Competitive Search Model*
+
+* Source: https://github.com/phantomachine/csm/
 
