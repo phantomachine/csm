@@ -19,7 +19,9 @@ A current version of the paper can be found here
 * SETOUTPATHS: Determine where to save results (.NPZ files) and figures (.PNG and .EPS files)
  * Users need to customize to own computer setting
  
-Python 3.8-- code for solving and simulating monetary equilibria. Code uses MPI4Py and OpenMPI for parallel computation.
+Python 3.8 code for solving and simulating monetary equilibria. Code uses MPI4Py and OpenMPI for parallel computation.
+
+* *Warning*: Known issue: Current distributions of Anaconda (Python 3.9 and higher) fail to have ``MPI4PY`` library build properly (applies for ``pip``, ``conda`` or hand-compiled from source): It fails to link to the executable ``mpicc`` in ``OpenMPI``. Users are advised to create a separate ``env`` installed with ``python`` 3.8.
 
 (c) Copyright 2022-, Timothy Kam. Contact: tcy.kam@gmail.com
 
