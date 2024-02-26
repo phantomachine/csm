@@ -1,4 +1,4 @@
-# csim
+# csm
 
 **C**ompetitive **S**earch and inflationary **M**onetary equilibrium
 
