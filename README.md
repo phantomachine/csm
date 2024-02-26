@@ -25,13 +25,13 @@ A current version of the paper can be found here
 
 * Code uses ``MPI4Py`` and ``OpenMPI`` for parallel computation.
 
-* *Warning* (This is a publicly known issue.) Current/latest distributions of Anaconda (Python 3.9 and higher) fail to have ``MPI4Py`` library build properly (applies for ``pip``, ``conda`` or hand-compiled from source): It fails to link to the executable ``mpicc`` in ``OpenMPI``. Users are advised to create a separate ``env`` installed with ``python`` 3.8.
+* *Warning* (This is a publicly known issue.) Current/latest distributions of ``Anaconda`` (``Python 3.9`` and higher) fail to have ``MPI4Py`` library build properly (applies for ``pip``, ``conda`` or hand-compiled from source): It fails to link to the executable ``mpicc`` in ``OpenMPI``. Users are advised to create a separate ``env`` installed with ``python 3.8``.
 
-(c) Copyright 2024-, Timothy Kam. Contact: tcy.kam@gmail.com
+(c) Copyright 2024-, Timothy Kam.
 
 ## Code Example
 
-To run the MAIN.PY file in normal mode (serial):
+To run the ``MAIN.PY`` file in normal mode (serial):
 
 > ``python main.py``
 
@@ -47,7 +47,7 @@ or, if you have chmod MAIN.PY to be BASH Executable you can also invoke as
 
 > ``mpirun -n YourNumberOfCPUs ./main.py``
 
-Same goes for CALIBRATE.PY or COMPARESTEADYSTATES.PY
+Same goes for ``CALIBRATE.PY`` or ``COMPARESTEADYSTATES.PY``
 
 ## Contributors
 
