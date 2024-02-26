@@ -1,6 +1,6 @@
 # csim
 
-**C**ompetitive **S**earch with endogenous **I**ncomplete **M**arkets
+**C**ompetitive **S**earch and inflationary **M**onetary equilibrium
 
 Python codes and (Data) Jupyter Notebook for paper *Inflation, Inequality and Welfare in a Competitive Search Model* by Timothy Kam, Tina Kao and Junsang Lee
 
@@ -53,5 +53,5 @@ Initial trial runs implemented by J. Lee.
 
 The GNU GPL v.3.0 terms apply everywhere to these codes and subsequent uses and modifications of them (see LICENCE). Please cite this original source in all your work (i.e., your own paper and source codes) as:
       * Paper: T. Kam, T. Kao and J. Lee (2024): **Inflation, Inequality and Welfare in a Competitive Search Model**
-      * Source: https://github.com/phantomachine/csim/
+      * Source: https://github.com/phantomachine/csm/
 
