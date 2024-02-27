@@ -24,13 +24,10 @@
 
     Windoze users: Replace the command mpirun with mpiexec
 
-    (c) 2017- T.Kam (tcy.kam@gmail.com) and J.Lee (junsanglee@skku.edu).
+    (c) 2017- T.Kam (tcy.kam@gmail.com).
 
-    The GNU GPL v.3.0 terms apply everywhere to these codes and subsequent uses and modifications of them (see LICENCE). Please cite this original source in all your work (i.e., your own paper and source codes) as:
-        * Paper: T. Kam and J. Lee (2017): "TITLE OF PAPER", *Journal Details*
-        * Code: github.com/phantomachine/cssegmart/
+    The GNU GPL v.3.0 terms apply everywhere to these codes and subsequent uses and modifications of them (see LICENCE). Please cite this original source in all your work (i.e., your own paper and source codes).
 
-    See CHANGELOG file for recent updates/bug-fix details.
     ===========================================================================
 """
 

@@ -23,13 +23,9 @@ import time
 from mpi4py import MPI
 
 """ CSSEGMOD.PY (v.1.1.0)
-(c) 2017- T.Kam (tcy.kam@gmail.com) and J.Lee (junsanglee@skku.edu).
+(c) 2017- T.Kam (tcy.kam@gmail.com)
 
-The GNU GPL v.3.0 terms (see LICENCE) apply everywhere to these codes and subsequent uses and modifications of them. Please cite this original source in all your work (i.e., your own paper and source codes) as:
-    * Paper: T. Kam and J. Lee (2017): "TITLE OF PAPER", *Journal Details*
-    * Code: github.com/phantomachine/cssegmart/
-
-See CHANGELOG file for recent updates/bug-fix details.
+The GNU GPL v.3.0 terms (see LICENCE) apply everywhere to these codes and subsequent uses and modifications of them. Please cite this original source in all your work (i.e., your own paper and source codes).
 
 """
 

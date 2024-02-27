@@ -11,13 +11,13 @@ Example Usage:
     import send
 
     # Custom message
-    message = "Hey there sexy!"
+    message = "Hey there!"
 
     # Send an automatic email to subscribers: see SEND.PY
     send.message(rootdir, message \
                 toaddr=["author1@gmail.com", "author2@gmail.com"])
 
-Copyright 2017, T.Kam and J.Lee
+Copyright 2017, T.Kam
 """
 
 def message(rootdir=' ', custom_message="", toaddr=["arttuditoo@gmail.com"]):
@@ -37,7 +37,7 @@ def message(rootdir=' ', custom_message="", toaddr=["arttuditoo@gmail.com"]):
 
     # Setup sender's login details (GMAIL)
     fromaddr = "arttuditoo@gmail.com"
-    passwd = "ANewHope1977"
+    passwd = "YOurGmailPassword"
     server = smtplib.SMTP('smtp.gmail.com', 587)
     # Customisable items above ===============================================
 

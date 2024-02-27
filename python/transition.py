@@ -45,7 +45,6 @@ PLOT_xaxis_TAU = True
 DM_GOOD_CEV = False
 
 # Specify email receipients here:
-# email_list = ["tcy.kam@gmail.com", "junsang.skku@gmail.com"]
 email_list = ["tcy.kam@gmail.com"]
 
 # MPI rank and cores:
