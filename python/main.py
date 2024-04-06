@@ -90,7 +90,7 @@ if num_cpus == 1 and rank == 0:
 
 # Set parameters here. Rename EXPERIMENT number for each new instance.
 
-experiment = 1    # (1, NBL) (2, ZBL)
+experiment = 2    # (1, NBL) (2, ZBL)
 
 beta_freq = 'Q'
 
@@ -302,6 +302,11 @@ if (rank == 0):
                 lottery_supports,lottery_payoffs, PlotSeparate=False)
         plt.savefig(figure_directory+'values.eps')
         plt.savefig(figure_directory+'values.png')
+        
+        plt = klmod.DrawValuefun(V,B,W-klmod.CHI,Vtilde,Vfit,\
+                lottery_supports,lottery_payoffs, PlotSeparate=True)
+        plt.savefig(figure_directory+'values-sep.eps')
+        plt.savefig(figure_directory+'values-sep.png')
 
         print('\n\n\tNow plotting and saving to EPS ... Decision functions')
         policies = [lstar, bstar, qstar, xstar]

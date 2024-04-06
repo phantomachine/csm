@@ -1293,7 +1293,7 @@ class basemod(object):
         # Area under graph of Vtilde (draw patch)
         plt.fill_between(self.m_grid,Vtilde, ymin, facecolor='gray', alpha=0.05, interpolate=True)
         # Graph of original non-convex function
-        plt.plot(self.m_grid, Vtilde, 'g-', lw=3, clip_on=False)
+        Vt, = plt.plot(self.m_grid, Vtilde, 'g-', lw=3, clip_on=False, label=r"$\tilde{V}$")
         # Support of lotteries and linear segments (lotteries): Lottery i
         Vtildefit = self.InterpFun1d(self.m_grid,Vtilde)
         Bfit = self.InterpFun1d(self.m_grid, B)
@@ -1305,8 +1305,8 @@ class basemod(object):
                     plt.plot( np.tile(lottery_supports[i,j],5),
                               np.linspace(ymin, lottery_payoffs[i,j], 5), '-.k')
                                                         # Dash-dot lines (y-axis)
-                    plt.plot( np.linspace(self.m_grid.min(), lottery_supports[i,j], 5), np.tile(lottery_payoffs[i,j],5), '-.k' )
-                                                    # Dash-dot lines (x-axis)
+                    # plt.plot( np.linspace(self.m_grid.min(), lottery_supports[i,j], 5), np.tile(lottery_payoffs[i,j],5), '-.k' )
+                    #                                 # Dash-dot lines (x-axis)
             # Draw marker points of lottery supports
             plt.plot(lottery_supports[i], lottery_payoffs[i],
                                     'mo', markersize=5, clip_on=False)
@@ -1326,28 +1326,33 @@ class basemod(object):
             # slope = np.diff(lottery_payoffs,axis=1)[i]/np.diff(lottery_supports,axis=1)[i]
             y1 = Vfit(x)#lottery_payoffs[i,0] + slope*(x - x[0])
             y2 = Vtildefit(x)        # interpolate Vtilde over sub-domain x
-            plt.fill_between(x, y2, y1, where=y2 <= y1,
-                                facecolor='gray', alpha = 0.25, interpolate=True)
+            # plt.fill_between(x, y2, y1, where=y2 <= y1,
+            #                     facecolor='gray', alpha = 0.25, interpolate=True)
 
         # Plot V:
         # V = spline(v_intersect_graph[:,0],v_intersect_graph[:,1], k=1)
         # plt.plot(m, V(m), 'yd', markersize=2, clip_on=False)
-        Wf,=plt.plot(self.m_grid, W, 'b.-',
-                        markersize=2,clip_on=False,label='$W$')
-        Bf,=plt.plot(self.m_grid, B, 'g--',
-                        markersize=2,clip_on=False,label='$B$')
+        # Wf,=plt.plot(self.m_grid, W, 'b.-',
+        #                 markersize=2,clip_on=False,label='$W$')
+        # Bf,=plt.plot(self.m_grid, B, 'g--',
+        #                 markersize=2,clip_on=True,label='$B$')
         Vf,=plt.plot(self.m_grid, V, 'md-',
-                        alpha=0.5,lw=3,markersize=2,clip_on=False,label='$V$')
+                        alpha=0.5,lw=3,markersize=2,clip_on=True,label=r'$\bar{V}$')
         # Tick points for m0 and mhat:
         #m0 = lottery_supports[0,1]
         #plt.plot(m0, Vfit(m0), 'sb', mhat, Vfit(mhat), 'dr', clip_on=False)
         # Legends on top
-        plt.legend(handles=[Vf,Bf,Wf],
-                                bbox_to_anchor=(0.5, 1.05),
-                                    ncol=3, fancybox=True, shadow=True)
+        # plt.legend(handles=[Vf,Bf,Wf],
+        #                         bbox_to_anchor=(0.5, 1.05),
+        #                             ncol=3, fancybox=True, shadow=True)
+        plt.legend(handles=[Vt, Vf],
+                   bbox_to_anchor=(0.5, 1.05),
+                   ncol=3, fancybox=True, shadow=True)
 
         plt.xlabel('$m$')
         plt.tight_layout()
+        plt.yscale("log")
+        # plt.ylim(bottom=W.min())
         # plt.savefig(figfolder+'values.eps')
         # plt.savefig(figfolder+'values.png')
 
