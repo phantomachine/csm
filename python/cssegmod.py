@@ -23,7 +23,7 @@ import time
 from mpi4py import MPI
 
 """ CSSEGMOD.PY (v.1.1.0)
-(c) 2017- T.Kam (tcy.kam@gmail.com)
+(c) 2023- T.Kam (tcy.kam@gmail.com)
 
 The GNU GPL v.3.0 terms (see LICENCE) apply everywhere to these codes and subsequent uses and modifications of them. Please cite this original source in all your work (i.e., your own paper and source codes).
 
