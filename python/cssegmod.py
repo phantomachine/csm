@@ -7,7 +7,7 @@ import numpy as np
 from scipy.optimize import fminbound
 from scipy.interpolate import InterpolatedUnivariateSpline as spline
 from scipy.interpolate import pchip, Akima1DInterpolator
-from scipy import interp
+import scipy.interpolate as interp
 #from numba import jit, void, int_, double
 from scipy.spatial import ConvexHull
 import setops as setops
@@ -397,9 +397,8 @@ class basemod(object):
         return funfit # instance at m point(s)
 
     def MoneyBalance(self, saving, omega):
-        """End-of-period balance with new money (growth) transfer. This was denoted as the function $\phi()$ in the theory in the paper.
-        NOTE: New assumption on Money Supply process:
-
+        """
+        End-of-period balance with new money (growth) transfer. This was denoted as the function phi() in the theory in the paper. NOTE: New assumption on Money Supply process:
             M(+1)/M = 1 + TAU,      BETA-1 < TAU < infty
         """
         gamma = self.MoneyGrowthFactor()
@@ -1540,7 +1539,7 @@ class basemod(object):
                                                             invert=False)
             plt.plot(x[index_bool], V_seq[j][index_bool],'o-m',
                                                             label='Lottery')
-            plt.plot(V_tilde_seq[j],'.g',label='$\~V$'+'('+str(j)+')')
+            plt.plot(V_tilde_seq[j],'.g',label=r'$\tilde{V}$'+'('+str(j)+')')
             plt.plot(graphV_seq[j][:,1], 'xr')
             plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.05),
                                         ncol=4, fancybox=True, shadow=True)
