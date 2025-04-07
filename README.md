@@ -3,7 +3,7 @@
 **C**ompetitive **S**earch and inflationary **M**onetary equilibrium
 
 Python codes and (Data) Jupyter Notebook for paper *Inflation, Inequality and Welfare in a Competitive Search Model* by Timothy Kam, Tina Kao and Junsang Lee
-* **Accepted and Forcoming**: *Macroeconomic Dynamics* 
+* **Accepted and Forthcoming**: *Macroeconomic Dynamics* 
 
 Stationary monetary equilibrium in a competitive search environment with free asset-market participation 
 
